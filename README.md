@@ -1,6 +1,6 @@
 # TCBKeychainManager
 
-[![CI Status](https://img.shields.io/travis/Neil Francis Ramirez Hipona/TCBKeychainManager.svg?style=flat)](https://travis-ci.org/Neil Francis Ramirez Hipona/TCBKeychainManager)
+[![CI Status](https://img.shields.io/travis/TCBKeychainManager/TCBKeychainManager.svg?style=flat)](https://travis-ci.org/TCBKeychainManager/TCBKeychainManager)
 [![Version](https://img.shields.io/cocoapods/v/TCBKeychainManager.svg?style=flat)](https://cocoapods.org/pods/TCBKeychainManager)
 [![License](https://img.shields.io/cocoapods/l/TCBKeychainManager.svg?style=flat)](https://cocoapods.org/pods/TCBKeychainManager)
 [![Platform](https://img.shields.io/cocoapods/p/TCBKeychainManager.svg?style=flat)](https://cocoapods.org/pods/TCBKeychainManager)
