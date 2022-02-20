@@ -10,6 +10,9 @@ import Foundation
 /**
  * TCBKeychainStoreSearchManager
  * The base class for handling a retrieval request to the keychain store
+ *
+ *  Searching for Keychain Items
+ *  https://developer.apple.com/documentation/security/keychain_services/keychain_items/searching_for_keychain_items
  */
 public struct TCBKeychainStoreSearchManager<AttributeGroup: TCBKeychainStoreItemAttributeProtocol, AttributeSearchGroup: TCBKeychainStoreItemQueryAttributeProtocol> {
     
