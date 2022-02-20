@@ -1,0 +1,16 @@
+PODS:
+  - TCBKeychainManager (0.1.0)
+
+DEPENDENCIES:
+  - TCBKeychainManager (from `../`)
+
+EXTERNAL SOURCES:
+  TCBKeychainManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TCBKeychainManager: 5bea3858d5b4f9cc0a194b15b32a43a9979d6a66
+
+PODFILE CHECKSUM: dcc2fed0ed71d375b1017fe7a48d1c3621a4148c
+
+COCOAPODS: 1.11.2

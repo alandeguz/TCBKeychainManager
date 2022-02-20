@@ -1,0 +1,22 @@
+{
+  "name": "TCBKeychainManager",
+  "version": "0.1.0",
+  "summary": "A short description of TCBKeychainManager.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Neil Francis Ramirez Hipona/TCBKeychainManager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Neil Francis Ramirez Hipona": "nferocious76@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Neil Francis Ramirez Hipona/TCBKeychainManager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "TCBKeychainManager/Classes/**/*"
+}

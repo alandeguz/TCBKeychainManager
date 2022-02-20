@@ -1,0 +1,6 @@
+framework module TCBKeychainManager {
+  umbrella header "TCBKeychainManager-umbrella.h"
+
+  export *
+  module * { export * }
+}
