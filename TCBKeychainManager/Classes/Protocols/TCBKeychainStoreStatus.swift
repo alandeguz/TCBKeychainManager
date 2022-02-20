@@ -18,12 +18,21 @@ public enum TCBKeychainStoreStatus: Error {
     case result(status: OSStatus, item: CFTypeRef? = nil)
     case unhandledError(status: OSStatus, item: CFTypeRef? = nil)
     
-    var description: String? {
+    public var description: String? {
         switch self {
         case .mismatchedType:
             return "TCBKeychainStore Error: Mismatched `Item Type` with supported `Attribute Group`"
         case .result(let status, _), .unhandledError(let status, _):
             return SecCopyErrorMessageString(status, nil) as String?
+        }
+    }
+    
+    public var item: CFTypeRef? {
+        switch self {
+        case .result(_, let item), .unhandledError(_, let item):
+            return item
+        default:
+            return nil
         }
     }
 }
