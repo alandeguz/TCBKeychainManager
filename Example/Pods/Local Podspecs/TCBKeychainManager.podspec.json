@@ -1,9 +1,9 @@
 {
   "name": "TCBKeychainManager",
   "version": "0.1.0",
-  "summary": "A short description of TCBKeychainManager.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Neil Francis Ramirez Hipona/TCBKeychainManager",
+  "summary": "Wrapper for Keychain built using Apple`s Security Framework.",
+  "description": "'Wrapper for Keychain built using Apple`s Security Framework. Allows you to manage your Keychain, store and update items and groups for additional App security.'",
+  "homepage": "https://github.com/TheCodingBug/TCBKeychainManager",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,9 +12,10 @@
     "Neil Francis Ramirez Hipona": "nferocious76@gmail.com"
   },
   "source": {
-    "git": "https://github.com/Neil Francis Ramirez Hipona/TCBKeychainManager.git",
+    "git": "https://github.com/TheCodingBug/TCBKeychainManager.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://twitter.com/nferocious76",
   "platforms": {
     "ios": "13.0"
   },
