@@ -44,7 +44,7 @@
 		554C87A2E96282E432AA576600465782 /* Pods-TCBKeychainManager_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TCBKeychainManager_Tests-Info.plist"; sourceTree = "<group>"; };
 		5A1FCD3B4F37F1150C8C489CC7E65BCC /* Pods-TCBKeychainManager_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TCBKeychainManager_Example-Info.plist"; sourceTree = "<group>"; };
 		5B8F33E9AD2F416DC1B6375D31140F67 /* Pods-TCBKeychainManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TCBKeychainManager_Tests.modulemap"; sourceTree = "<group>"; };
-		5DCF72C6979B709740B6E30B227C2DA2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		5DCF72C6979B709740B6E30B227C2DA2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		5FE0331550E71544A879F92F1B25F182 /* Pods-TCBKeychainManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TCBKeychainManager_Tests-dummy.m"; sourceTree = "<group>"; };
 		6D7890947EC13C7CA30733F6BF1F380A /* Pods-TCBKeychainManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCBKeychainManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6F42B7B498DDBD3F1C612AE615741B8F /* Pods-TCBKeychainManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TCBKeychainManager_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -52,22 +52,22 @@
 		7A1316A20C3812ADE400DC14693B6DC5 /* TCBKeychainManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TCBKeychainManager-dummy.m"; sourceTree = "<group>"; };
 		7AE1DA7E0F62016164904F9B8ECAF627 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = TCBKeychainManager/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		7DB01FDD9C860CBFA616F7CA68A81B50 /* TCBKeychainManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TCBKeychainManager.release.xcconfig; sourceTree = "<group>"; };
-		7ECEB9D8AA69C66A0D0B4D447D25BDF2 /* TCBKeychainManager */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TCBKeychainManager; path = TCBKeychainManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ECEB9D8AA69C66A0D0B4D447D25BDF2 /* TCBKeychainManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TCBKeychainManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C7497ABE4C27663D306BE91C20E0AB /* Pods-TCBKeychainManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TCBKeychainManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		84E84B684D99B19B8B427023C5B5F46E /* Pods-TCBKeychainManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCBKeychainManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8A51FA30F031D75C517937D99DFC55C3 /* TCBKeychainManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TCBKeychainManager-prefix.pch"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AB0D6D685547616F5DE61A96BE173B3D /* Pods-TCBKeychainManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TCBKeychainManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		ACE71678EE15C0EC35B373A6930FDB85 /* Pods-TCBKeychainManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCBKeychainManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B7CDCF06CC48C685B943C3A8904D8897 /* Pods-TCBKeychainManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TCBKeychainManager_Example-dummy.m"; sourceTree = "<group>"; };
 		BF0C57C3606FCE52AA829C6AD751559B /* TCBKeychainManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TCBKeychainManager.modulemap; sourceTree = "<group>"; };
-		C105BAF78A9BAA217DAB34411E098CD0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		C5209A430E1E1B5A88DD23BAAD1496D8 /* Pods-TCBKeychainManager_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TCBKeychainManager_Tests"; path = Pods_TCBKeychainManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C105BAF78A9BAA217DAB34411E098CD0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C5209A430E1E1B5A88DD23BAAD1496D8 /* Pods_TCBKeychainManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCBKeychainManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CACEE3B9DAAE3F2478E3D606FAEE3BEA /* Pods-TCBKeychainManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TCBKeychainManager_Example.modulemap"; sourceTree = "<group>"; };
-		CD108E128F1B398DCFC3BC0B50D50105 /* Pods-TCBKeychainManager_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TCBKeychainManager_Example"; path = Pods_TCBKeychainManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD108E128F1B398DCFC3BC0B50D50105 /* Pods_TCBKeychainManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCBKeychainManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7172E98784A3C10912987BDBF9E5F23 /* Pods-TCBKeychainManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TCBKeychainManager_Example-umbrella.h"; sourceTree = "<group>"; };
 		DD207D40EC734ED57395E2F13D791828 /* Pods-TCBKeychainManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCBKeychainManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F2C331C599CBA434C617AD649EE65883 /* TCBKeychainManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TCBKeychainManager.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F2C331C599CBA434C617AD649EE65883 /* TCBKeychainManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TCBKeychainManager.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F97E3E78D218256C5236DAC72C039081 /* TCBKeychainManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TCBKeychainManager-Info.plist"; sourceTree = "<group>"; };
 		FA7EC6243670840E58354A7A892EF520 /* Pods-TCBKeychainManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TCBKeychainManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -216,9 +216,9 @@
 		FC0B6CA18995C5C4FAD51D988E9F2BCC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CD108E128F1B398DCFC3BC0B50D50105 /* Pods-TCBKeychainManager_Example */,
-				C5209A430E1E1B5A88DD23BAAD1496D8 /* Pods-TCBKeychainManager_Tests */,
-				7ECEB9D8AA69C66A0D0B4D447D25BDF2 /* TCBKeychainManager */,
+				CD108E128F1B398DCFC3BC0B50D50105 /* Pods_TCBKeychainManager_Example.framework */,
+				C5209A430E1E1B5A88DD23BAAD1496D8 /* Pods_TCBKeychainManager_Tests.framework */,
+				7ECEB9D8AA69C66A0D0B4D447D25BDF2 /* TCBKeychainManager.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -269,7 +269,7 @@
 			);
 			name = "Pods-TCBKeychainManager_Example";
 			productName = Pods_TCBKeychainManager_Example;
-			productReference = CD108E128F1B398DCFC3BC0B50D50105 /* Pods-TCBKeychainManager_Example */;
+			productReference = CD108E128F1B398DCFC3BC0B50D50105 /* Pods_TCBKeychainManager_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		37DA2B4F6D2B17F3E9797BA61D96DB36 /* Pods-TCBKeychainManager_Tests */ = {
@@ -288,7 +288,7 @@
 			);
 			name = "Pods-TCBKeychainManager_Tests";
 			productName = Pods_TCBKeychainManager_Tests;
-			productReference = C5209A430E1E1B5A88DD23BAAD1496D8 /* Pods-TCBKeychainManager_Tests */;
+			productReference = C5209A430E1E1B5A88DD23BAAD1496D8 /* Pods_TCBKeychainManager_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		443D715FAD91A7A988FCD85C20BF69AB /* TCBKeychainManager */ = {
@@ -306,7 +306,7 @@
 			);
 			name = TCBKeychainManager;
 			productName = TCBKeychainManager;
-			productReference = 7ECEB9D8AA69C66A0D0B4D447D25BDF2 /* TCBKeychainManager */;
+			productReference = 7ECEB9D8AA69C66A0D0B4D447D25BDF2 /* TCBKeychainManager.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -316,7 +316,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					443D715FAD91A7A988FCD85C20BF69AB = {
+						LastSwiftMigration = 1320;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -459,7 +464,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -487,7 +492,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-TCBKeychainManager_Tests/Pods-TCBKeychainManager_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TCBKeychainManager_Tests/Pods-TCBKeychainManager_Tests.modulemap";
@@ -520,7 +525,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/TCBKeychainManager/TCBKeychainManager-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/TCBKeychainManager/TCBKeychainManager-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/TCBKeychainManager/TCBKeychainManager.modulemap";
 				PRODUCT_MODULE_NAME = TCBKeychainManager;
@@ -528,7 +533,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -550,7 +555,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-TCBKeychainManager_Example/Pods-TCBKeychainManager_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TCBKeychainManager_Example/Pods-TCBKeychainManager_Example.modulemap";
@@ -583,7 +588,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/TCBKeychainManager/TCBKeychainManager-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/TCBKeychainManager/TCBKeychainManager-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/TCBKeychainManager/TCBKeychainManager.modulemap";
 				PRODUCT_MODULE_NAME = TCBKeychainManager;
@@ -591,7 +596,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -614,7 +619,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-TCBKeychainManager_Example/Pods-TCBKeychainManager_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TCBKeychainManager_Example/Pods-TCBKeychainManager_Example.modulemap";
@@ -681,13 +686,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -708,7 +712,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-TCBKeychainManager_Tests/Pods-TCBKeychainManager_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TCBKeychainManager_Tests/Pods-TCBKeychainManager_Tests.modulemap";
