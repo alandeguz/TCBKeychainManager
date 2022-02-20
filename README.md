@@ -20,6 +20,11 @@ it, simply add the following line to your Podfile:
 pod 'TCBKeychainManager'
 ```
 
+If pods path is not found. Use format: 
+```ruby
+pod 'TCBKeychainManager', :git => 'https://github.com/TheCodingBug/TCBKeychainManager.git'
+```
+
 ## Author
 
 Neil Francis Ramirez Hipona, nferocious76@gmail.com
