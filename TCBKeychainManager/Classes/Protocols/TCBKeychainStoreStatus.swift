@@ -15,14 +15,14 @@ import Foundation
  */
 public enum TCBKeychainStoreStatus: Error {
     case mismatchedType
-    case result(status: OSStatus)
-    case unhandledError(status: OSStatus)
+    case result(status: OSStatus, item: CFTypeRef? = nil)
+    case unhandledError(status: OSStatus, item: CFTypeRef? = nil)
     
     var description: String? {
         switch self {
         case .mismatchedType:
             return "TCBKeychainStore Error: Mismatched `Item Type` with supported `Attribute Group`"
-        case .result(let status), .unhandledError(let status):
+        case .result(let status, _), .unhandledError(let status, _):
             return SecCopyErrorMessageString(status, nil) as String?
         }
     }

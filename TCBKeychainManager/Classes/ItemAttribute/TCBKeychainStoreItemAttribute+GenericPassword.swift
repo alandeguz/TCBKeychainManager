@@ -15,6 +15,7 @@ import Foundation
  * https://developer.apple.com/documentation/security/keychain_services/keychain_items/adding_a_password_to_the_keychain
  */
 public enum TCBKeychainStoreItemAttributeGenericPassword: TCBKeychainStoreItemAttributeProtocol {
+
 #if os(macOS)
     case access // mac
 #endif

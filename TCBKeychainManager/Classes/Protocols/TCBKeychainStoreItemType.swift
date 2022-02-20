@@ -11,25 +11,26 @@ import Foundation
  * Keys and Values:
  * https://developer.apple.com/documentation/security/keychain_services/keychain_items/item_attribute_keys_and_values
  */
-public enum TCBKeychainStoreItemType {
+public enum TCBKeychainStoreItemType: TCBKeychainStoreItemAttributeProtocol {
+    
     case genericPassword
     case internetPassword
     case certificate
     case cryptic
     case identity
     
-    internal var secValue: CFString {
+    public var attributeKey: String {
         switch self {
         case .genericPassword:
-            return kSecClassGenericPassword
+            return String(kSecClassGenericPassword)
         case .internetPassword:
-            return kSecClassInternetPassword
+            return String(kSecClassInternetPassword)
         case .certificate:
-            return kSecClassCertificate
+            return String(kSecClassCertificate)
         case .cryptic:
-            return kSecClassKey
+            return String(kSecClassKey)
         case .identity:
-            return kSecClassIdentity
+            return String(kSecClassIdentity)
         }
     }
     

@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'TCBKeychainManager'
   s.version          = '0.1.0'
-  s.summary          = 'Wrapper for Keychain built using Apple's Security Framework.'
+  s.summary          = 'Wrapper for Keychain built using Apple`s Security Framework.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  Wrapper for Keychain built using Apple's Security Framework. Allows you to manage your Keychain, store and update items and groups for additional App security.
+  'Wrapper for Keychain built using Apple`s Security Framework. Allows you to manage your Keychain, store and update items and groups for additional App security.'
                        DESC
 
   s.homepage         = 'https://github.com/TheCodingBug/TCBKeychainManager'
