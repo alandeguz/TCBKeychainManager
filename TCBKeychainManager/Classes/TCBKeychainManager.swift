@@ -8,8 +8,8 @@
 import Foundation
 
 /**
- SecItemAdd(_:_:):
- https://developer.apple.com/documentation/security/1401659-secitemadd
+ * SecItemAdd(_:_:):
+ * https://developer.apple.com/documentation/security/1401659-secitemadd
  */
 public struct TCBKeychainManager<AttributeGroup: TCBKeychainStoreItemAttributeProtocol>: TCBKeychainStoreProtocol {
     
@@ -28,16 +28,16 @@ public struct TCBKeychainManager<AttributeGroup: TCBKeychainStoreItemAttributePr
     public mutating func addValue(for attribute: AttributeGroup, value: Any) throws {
         guard itemType.secAttributeGroup == AttributeGroup.self
         else {
-            throw TCBKeychainStoreError.mismatchedType
+            throw TCBKeychainStoreStatus.mismatchedType
         }
         
         query[attribute.attributeKey] = value
     }
 
     @discardableResult
-    public func saveSecItem() throws -> OSStatus {
+    public func saveSecItem() throws -> TCBKeychainStoreStatus {
         let status = SecItemAdd(secQuery, nil)
-        guard status == errSecSuccess else { throw TCBKeychainStoreError.unhandledError(status: status) }
-        return status
+        guard status == errSecSuccess else { throw TCBKeychainStoreStatus.unhandledError(status: status) }
+        return TCBKeychainStoreStatus.result(status: status)
     }
 }

@@ -8,8 +8,8 @@
 import Foundation
 
 /**
- Keys and Values:
- https://developer.apple.com/documentation/security/keychain_services/keychain_items/item_attribute_keys_and_values
+ * Keys and Values:
+ * https://developer.apple.com/documentation/security/keychain_services/keychain_items/item_attribute_keys_and_values
  */
 public enum TCBKeychainStoreItemType {
     case genericPassword

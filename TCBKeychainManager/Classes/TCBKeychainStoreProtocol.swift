@@ -15,5 +15,5 @@ public protocol TCBKeychainStoreProtocol {
     associatedtype AttributeGroup
     
     mutating func addValue(for attribute: AttributeGroup, value: Any) throws
-    func saveSecItem() throws -> OSStatus
+    func saveSecItem() throws -> TCBKeychainStoreStatus
 }
