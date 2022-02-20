@@ -25,7 +25,12 @@ public struct TCBKeychainManager<AttributeGroup: TCBKeychainStoreItemAttributePr
         self.query = [String(kSecClass): itemType.secValue]
     }
     
-    public mutating func addValue(for attribute: AttributeGroup, value: Any) {
+    public mutating func addValue(for attribute: AttributeGroup, value: Any) throws {
+        guard itemType.secAttributeGroup == AttributeGroup.self
+        else {
+            throw TCBKeychainStoreError.mismatchedType
+        }
+        
         query[attribute.attributeKey] = value
     }
 
