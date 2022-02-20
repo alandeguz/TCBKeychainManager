@@ -7,7 +7,6 @@ target 'TCBKeychainManager_Example' do
 
   target 'TCBKeychainManager_Tests' do
     inherit! :search_paths
-
     
   end
 end
