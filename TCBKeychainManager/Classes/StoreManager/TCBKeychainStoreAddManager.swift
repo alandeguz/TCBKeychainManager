@@ -1,6 +1,6 @@
 //
-//  TCBKeychainStoreManager.swift
-//  TCBKeychainStoreManager
+//  TCBKeychainStoreAddManager.swift
+//  TCBKeychainStoreAddManager
 //
 //  Created by Neil Francis Hipona on 2/20/22.
 //
@@ -8,10 +8,10 @@
 import Foundation
 
 /**
- * TCBKeychainStoreManager
+ * TCBKeychainStoreAddManager
  * The base class for handling a request modification to the keychain store
  */
-public struct TCBKeychainStoreManager<AttributeGroup: TCBKeychainStoreItemAttributeProtocol> {
+public struct TCBKeychainStoreAddManager<AttributeGroup: TCBKeychainStoreItemAttributeProtocol> {
     
     public var itemType: TCBKeychainStoreItemType
     public var query: [String: Any]
@@ -26,7 +26,7 @@ public struct TCBKeychainStoreManager<AttributeGroup: TCBKeychainStoreItemAttrib
     }
 }
 
-extension TCBKeychainStoreManager: TCBKeychainStoreProtocol {
+extension TCBKeychainStoreAddManager: TCBKeychainStoreProtocol {
     
     public mutating func addValue(for attribute: AttributeGroup, value: Any) throws {
         guard itemType.secAttributeGroup == AttributeGroup.self
