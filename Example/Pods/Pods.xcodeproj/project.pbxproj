@@ -24,7 +24,7 @@
 		37A22141A2B862EC0176DD46BC6DE9A5 /* TCBKeychainStoreItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3E2DD9D366EFEDEBFE67AD384AE680 /* TCBKeychainStoreItemType.swift */; };
 		3818894E29185DA3C74F0B80770F0CE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		5CB4CF8E0511541AFEFDDE24FCEFC499 /* Pods-TCBKeychainManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CDCF06CC48C685B943C3A8904D8897 /* Pods-TCBKeychainManager_Example-dummy.m */; };
-		65385742F1374F92E6083524CACC3458 /* TCBKeychainStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AA83D1F25407E4CF57CBE931CADF8A /* TCBKeychainStoreManager.swift */; };
+		65385742F1374F92E6083524CACC3458 /* TCBKeychainStoreAddManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AA83D1F25407E4CF57CBE931CADF8A /* TCBKeychainStoreAddManager.swift */; };
 		88642DD764C0BAD3E3C7864948EC8A60 /* TCBKeychainStoreProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA99B3D0E0774C2E3FE9390021776E1 /* TCBKeychainStoreProtocols.swift */; };
 		9091BA15D197ACA14930C15B76FD4263 /* Pods-TCBKeychainManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE0331550E71544A879F92F1B25F182 /* Pods-TCBKeychainManager_Tests-dummy.m */; };
 		A0C69076360F4E3C80BA928315BA8067 /* TCBKeychainManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA211130604FF514429702FD1EF9B0AF /* TCBKeychainManager-dummy.m */; };
@@ -72,7 +72,7 @@
 		415F4CF1EE1439DE3FD72AC346F21408 /* Pods-TCBKeychainManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TCBKeychainManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		432DFA815DB2224E931949B2F78ECD36 /* TCBKeychainManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TCBKeychainManager-Info.plist"; sourceTree = "<group>"; };
 		4BA99B3D0E0774C2E3FE9390021776E1 /* TCBKeychainStoreProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TCBKeychainStoreProtocols.swift; sourceTree = "<group>"; };
-		54AA83D1F25407E4CF57CBE931CADF8A /* TCBKeychainStoreManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TCBKeychainStoreManager.swift; sourceTree = "<group>"; };
+		54AA83D1F25407E4CF57CBE931CADF8A /* TCBKeychainStoreAddManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TCBKeychainStoreAddManager.swift; sourceTree = "<group>"; };
 		554C87A2E96282E432AA576600465782 /* Pods-TCBKeychainManager_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TCBKeychainManager_Tests-Info.plist"; sourceTree = "<group>"; };
 		5A1FCD3B4F37F1150C8C489CC7E65BCC /* Pods-TCBKeychainManager_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TCBKeychainManager_Example-Info.plist"; sourceTree = "<group>"; };
 		5B8F33E9AD2F416DC1B6375D31140F67 /* Pods-TCBKeychainManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TCBKeychainManager_Tests.modulemap"; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 		083BC31E27C24BB500191CF4 /* StoreManager */ = {
 			isa = PBXGroup;
 			children = (
-				54AA83D1F25407E4CF57CBE931CADF8A /* TCBKeychainStoreManager.swift */,
+				54AA83D1F25407E4CF57CBE931CADF8A /* TCBKeychainStoreAddManager.swift */,
 				083BC31C27C24AE200191CF4 /* TCBKeychainStoreSearchManager.swift */,
 				083BC31827C2488900191CF4 /* TCBKeychainStoreUpdateManager.swift */,
 				083BC32627C4AF6100191CF4 /* TCBKeychainStoreDeleteManager.swift */,
@@ -455,7 +455,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65385742F1374F92E6083524CACC3458 /* TCBKeychainStoreManager.swift in Sources */,
+				65385742F1374F92E6083524CACC3458 /* TCBKeychainStoreAddManager.swift in Sources */,
 				A0C69076360F4E3C80BA928315BA8067 /* TCBKeychainManager-dummy.m in Sources */,
 				A554C10D89A2DC0340D2756220D2A9B4 /* TCBKeychainStoreItemAttribute+GenericPassword.swift in Sources */,
 				37A22141A2B862EC0176DD46BC6DE9A5 /* TCBKeychainStoreItemType.swift in Sources */,

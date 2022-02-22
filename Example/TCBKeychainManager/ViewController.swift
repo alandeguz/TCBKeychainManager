@@ -20,20 +20,16 @@ class ViewController: UIViewController {
         deleteTest()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     func addTest() {
         // ADD TEST
-        var addManager = TCBKeychainStoreManager<TCBKeychainStoreItemAttributeGenericPassword>(itemType: .genericPassword)
+        var addManager = TCBKeychainStoreAddManager<TCBKeychainStoreItemAttributeGenericPassword>(itemType: .genericPassword)
         do {
             let passwordData = "test_account_password".data(using: .utf8)!
             try addManager.addValue(for: .account, value: "test_account")
             try addManager.addValue(for: .password, value: passwordData)
             
-            try addManager.saveItem()
+            let addResult = try addManager.saveItem()
+            print("\nAdd Status: \(addResult.description!)")
         } catch {
             if let error = error as? TCBKeychainStoreStatus {
                 print("addManager: \(error.description!)")
@@ -54,10 +50,10 @@ class ViewController: UIViewController {
             retrieveManager.addReturnType(with: .persistentReference)
             
             let searchedResult = try retrieveManager.searchItem()
-            print("\nAdded Found: \(searchedResult)")
+            print("\nSearched Status: \(searchedResult.description!)")
             
             if let searchedResult = searchedResult.item as? [String: Any], let pwdData = searchedResult[TCBKeychainStoreItemAttributeGenericPassword.password.attributeKey] as? Data, let password = String(data: pwdData, encoding: String.Encoding.utf8) {
-                print("\n\nAdded Found Password: \(password)")
+                print("Searched Found Password: \(password)")
             }
         } catch {
             if let error = error as? TCBKeychainStoreStatus {
@@ -78,7 +74,7 @@ class ViewController: UIViewController {
             try updateManager.addValueToUpdate(for: .password, value: passwordData)
             
             let updateResult = try updateManager.updateItem()
-            print("\n\nUpdate Result: \(updateResult) -- pwd: \(password)")
+            print("\n\nUpdate Result: \(updateResult.description!) -- pwd: \(password)")
         } catch {
             if let error = error as? TCBKeychainStoreStatus {
                 print("\n\n updateManager: \(error.description!)")
@@ -118,7 +114,7 @@ class ViewController: UIViewController {
             try deleteManager.addQuery(for: .account, value: "test_account")
             
             let deleteResult = try deleteManager.deleteItem()
-            print("\n\nDelete Result: \(deleteResult.description)")
+            print("\n\nDelete Result: \(deleteResult.description!)")
         } catch {
             if let error = error as? TCBKeychainStoreStatus {
                 print("\n\n deleteManager: \(error.description!)")
