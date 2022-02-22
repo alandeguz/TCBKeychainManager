@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TCBKeychainManager'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Wrapper for Keychain built using Apple`s Security Framework.'
   s.swift_version    = '5.0'
 
