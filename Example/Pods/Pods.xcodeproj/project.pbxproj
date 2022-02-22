@@ -18,6 +18,7 @@
 		083BC32127C2726500191CF4 /* TCBKeychainStoreItemReturnType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083BC32027C2726500191CF4 /* TCBKeychainStoreItemReturnType.swift */; };
 		083BC32327C272F100191CF4 /* TCBKeychainStoreItemProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083BC32227C272F100191CF4 /* TCBKeychainStoreItemProtocols.swift */; };
 		083BC32527C27D8200191CF4 /* TCBKeychainStoreItemAttribute+SearchQueryLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083BC32427C27D8200191CF4 /* TCBKeychainStoreItemAttribute+SearchQueryLimit.swift */; };
+		083BC32727C4AF6100191CF4 /* TCBKeychainStoreDeleteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083BC32627C4AF6100191CF4 /* TCBKeychainStoreDeleteManager.swift */; };
 		348DEEFF21DDAF64620826086F66D213 /* Pods-TCBKeychainManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F42B7B498DDBD3F1C612AE615741B8F /* Pods-TCBKeychainManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3653D9A4635A2448923D97A08D7E6DAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		37A22141A2B862EC0176DD46BC6DE9A5 /* TCBKeychainStoreItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3E2DD9D366EFEDEBFE67AD384AE680 /* TCBKeychainStoreItemType.swift */; };
@@ -63,6 +64,7 @@
 		083BC32027C2726500191CF4 /* TCBKeychainStoreItemReturnType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCBKeychainStoreItemReturnType.swift; sourceTree = "<group>"; };
 		083BC32227C272F100191CF4 /* TCBKeychainStoreItemProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCBKeychainStoreItemProtocols.swift; sourceTree = "<group>"; };
 		083BC32427C27D8200191CF4 /* TCBKeychainStoreItemAttribute+SearchQueryLimit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TCBKeychainStoreItemAttribute+SearchQueryLimit.swift"; sourceTree = "<group>"; };
+		083BC32627C4AF6100191CF4 /* TCBKeychainStoreDeleteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCBKeychainStoreDeleteManager.swift; sourceTree = "<group>"; };
 		0E0656DA3E4FCAE67B9E4CC8CBA5225A /* TCBKeychainManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TCBKeychainManager.modulemap; sourceTree = "<group>"; };
 		295B8777E5DC6EF11DFF68AC96BC975D /* TCBKeychainStoreItemAttribute+GenericPassword.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "TCBKeychainStoreItemAttribute+GenericPassword.swift"; sourceTree = "<group>"; };
 		29A2EE38CAB0DDAAE7998C65DFE871FA /* TCBKeychainManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TCBKeychainManager.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -149,6 +151,7 @@
 				54AA83D1F25407E4CF57CBE931CADF8A /* TCBKeychainStoreManager.swift */,
 				083BC31C27C24AE200191CF4 /* TCBKeychainStoreSearchManager.swift */,
 				083BC31827C2488900191CF4 /* TCBKeychainStoreUpdateManager.swift */,
+				083BC32627C4AF6100191CF4 /* TCBKeychainStoreDeleteManager.swift */,
 			);
 			name = StoreManager;
 			path = TCBKeychainManager/Classes/StoreManager;
@@ -468,6 +471,7 @@
 				083BC31B27C24A5D00191CF4 /* TCBKeychainStoreItemAttribute+SearchQuery.swift in Sources */,
 				083BC32127C2726500191CF4 /* TCBKeychainStoreItemReturnType.swift in Sources */,
 				083BC31527C23A7600191CF4 /* TCBKeychainStoreStatus.swift in Sources */,
+				083BC32727C4AF6100191CF4 /* TCBKeychainStoreDeleteManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

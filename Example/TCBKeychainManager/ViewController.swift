@@ -15,6 +15,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        addTest()
+        updateTest()
+        deleteTest()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+    func addTest() {
         // ADD TEST
         var addManager = TCBKeychainStoreManager<TCBKeychainStoreItemAttributeGenericPassword>(itemType: .genericPassword)
         do {
@@ -43,17 +54,19 @@ class ViewController: UIViewController {
             retrieveManager.addReturnType(with: .persistentReference)
             
             let searchedResult = try retrieveManager.searchItem()
-            print("\nFound: \(searchedResult)")
+            print("\nAdded Found: \(searchedResult)")
             
             if let searchedResult = searchedResult.item as? [String: Any], let pwdData = searchedResult[TCBKeychainStoreItemAttributeGenericPassword.password.attributeKey] as? Data, let password = String(data: pwdData, encoding: String.Encoding.utf8) {
-                print("\n\nFound Password: \(password)")
+                print("\n\nAdded Found Password: \(password)")
             }
         } catch {
             if let error = error as? TCBKeychainStoreStatus {
-                print("\n\nretrieveManager: \(error.description!)")
+                print("\n\n retrieveManager: \(error.description!)")
             }
         }
-        
+    }
+    
+    func updateTest() {
         // UPDATE TEST
         var  updateManager = TCBKeychainStoreUpdateManager<TCBKeychainStoreItemAttributeGenericPassword, TCBKeychainStoreItemAttributeSearchQuery>(itemType: .genericPassword)
         
@@ -65,10 +78,10 @@ class ViewController: UIViewController {
             try updateManager.addValueToUpdate(for: .password, value: passwordData)
             
             let updateResult = try updateManager.updateItem()
-            print("\n\nUpdated Result: \(updateResult) -- pwd: \(password)")
+            print("\n\nUpdate Result: \(updateResult) -- pwd: \(password)")
         } catch {
             if let error = error as? TCBKeychainStoreStatus {
-                print("\n\nupdateManager: \(error.description!)")
+                print("\n\n updateManager: \(error.description!)")
             }
         }
         
@@ -91,15 +104,49 @@ class ViewController: UIViewController {
             }
         } catch {
             if let error = error as? TCBKeychainStoreStatus {
-                print("\n\nretrieveUpdatedManager: \(error.description!)")
+                print("\n\n retrieveUpdatedManager: \(error.description!)")
             }
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func deleteTest() {
+        
+        // DELETE TEST
+        var deleteManager = TCBKeychainStoreDeleteManager<TCBKeychainStoreItemAttributeGenericPassword, TCBKeychainStoreItemAttributeSearchQuery>(itemType: .genericPassword)
+        
+        do {
+            try deleteManager.addQuery(for: .account, value: "test_account")
+            
+            let deleteResult = try deleteManager.deleteItem()
+            print("\n\nDelete Result: \(deleteResult.description)")
+        } catch {
+            if let error = error as? TCBKeychainStoreStatus {
+                print("\n\n deleteManager: \(error.description!)")
+            }
+        }
+        
+        // RETRIEVE TEST
+        var retrieveUpdatedManager = TCBKeychainStoreSearchManager<TCBKeychainStoreItemAttributeGenericPassword, TCBKeychainStoreItemAttributeSearchQuery>(itemType: .genericPassword)
+        
+        do {
+            try retrieveUpdatedManager.addSearchValue(for: .account, value: "test_account")
+            
+            retrieveUpdatedManager.addReturnType(with: .attributes)
+            retrieveUpdatedManager.addReturnType(with: .data)
+            retrieveUpdatedManager.addReturnType(with: .reference)
+            retrieveUpdatedManager.addReturnType(with: .persistentReference)
+            
+            let searchedResult = try retrieveUpdatedManager.searchItem()
+            print("\nDeleted Found Updated: \(searchedResult)")
+            
+            if let searchedResult = searchedResult.item as? [String: Any], let pwdData = searchedResult[TCBKeychainStoreItemAttributeGenericPassword.password.attributeKey] as? Data, let password = String(data: pwdData, encoding: String.Encoding.utf8) {
+                print("\n\nFound Deleted Password: \(password)")
+            }
+        } catch {
+            if let error = error as? TCBKeychainStoreStatus {
+                print("\n\n retrieveDeletedManager: \(error.description!)")
+            }
+        }
     }
-
 }
 
