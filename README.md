@@ -31,7 +31,7 @@ Sample usage of class managers for specific purposes, nescessary config changes 
 
 Sample constructor for adding an `Item` to the `Keychain`.
 ```Swift
-var manager = TCBKeychainStoreManager<TCBKeychainStoreItemAttributeGenericPassword>(itemType: .genericPassword)
+var manager = TCBKeychainStoreAddManager<TCBKeychainStoreItemAttributeGenericPassword>(itemType: .genericPassword)
 do {
     let passwordData = "test_account_password".data(using: .utf8)!
     try manager.addValue(for: .account, value: "test_account")
