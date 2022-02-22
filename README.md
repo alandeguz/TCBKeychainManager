@@ -37,7 +37,7 @@ do {
     try manager.addValue(for: .account, value: "test_account")
     try manager.addValue(for: .password, value: passwordData)
     
-    let addResult = try addManager.saveItem()
+    let addResult = try manager.saveItem()
     print("\nAdd Status: \(addResult.description!)")
 } catch {
     if let error = error as? TCBKeychainStoreStatus {
