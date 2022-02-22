@@ -46,6 +46,6 @@ extension TCBKeychainStoreManager: TCBKeychainStoreProtocol {
         var item: CFTypeRef?
         let status = SecItemAdd(secQuery, &item)
         guard status == errSecSuccess else { throw TCBKeychainStoreStatus.unhandledError(status: status, item: item) }
-        return TCBKeychainStoreStatus.result(status: status, item: item)
+        return TCBKeychainStoreStatus.itemAdded(item: item)
     }
 }

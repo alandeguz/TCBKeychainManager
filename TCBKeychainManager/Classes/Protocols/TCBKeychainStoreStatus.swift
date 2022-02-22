@@ -15,6 +15,7 @@ import Foundation
  */
 public enum TCBKeychainStoreStatus: Error {
     case mismatchedType
+    case itemAdded(item: CFTypeRef? = nil)
     case deleteSuccess
     case result(status: OSStatus, item: CFTypeRef? = nil)
     case unhandledError(status: OSStatus, item: CFTypeRef? = nil)
@@ -23,6 +24,8 @@ public enum TCBKeychainStoreStatus: Error {
         switch self {
         case .mismatchedType:
             return "TCBKeychainStore Error: Mismatched `Item Type` with supported `Attribute Group`"
+        case .itemAdded:
+            return "TCBKeychainStore: Item(s) has been successfully added to the keychain."
         case .deleteSuccess:
             return "TCBKeychainStore: Item(s) has been successfully deleted from the keychain."
         case .result(let status, _), .unhandledError(let status, _):
@@ -32,7 +35,7 @@ public enum TCBKeychainStoreStatus: Error {
     
     public var item: CFTypeRef? {
         switch self {
-        case .result(_, let item), .unhandledError(_, let item):
+        case .itemAdded(let item), .result(_, let item), .unhandledError(_, let item):
             return item
         default:
             return nil
