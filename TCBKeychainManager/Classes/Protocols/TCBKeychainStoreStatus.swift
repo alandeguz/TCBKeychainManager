@@ -15,6 +15,7 @@ import Foundation
  */
 public enum TCBKeychainStoreStatus: Error {
     case mismatchedType
+    case deleteSuccess
     case result(status: OSStatus, item: CFTypeRef? = nil)
     case unhandledError(status: OSStatus, item: CFTypeRef? = nil)
     
@@ -22,6 +23,8 @@ public enum TCBKeychainStoreStatus: Error {
         switch self {
         case .mismatchedType:
             return "TCBKeychainStore Error: Mismatched `Item Type` with supported `Attribute Group`"
+        case .deleteSuccess:
+            return "TCBKeychainStore: Item(s) has been successfully deleted from the keychain."
         case .result(let status, _), .unhandledError(let status, _):
             return SecCopyErrorMessageString(status, nil) as String?
         }

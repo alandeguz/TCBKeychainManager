@@ -12,9 +12,14 @@ import Foundation
  * Item Class Keys and Values
  * https://developer.apple.com/documentation/security/keychain_services/keychain_items/item_class_keys_and_values
  *
+ * Item Attribute Keys and Values
+ * https://developer.apple.com/documentation/security/keychain_services/keychain_items/item_attribute_keys_and_values?language=objc
  *
  * SecItemDelete(_:)
  * https://developer.apple.com/documentation/security/1395547-secitemdelete
+ *
+ * Keychain Services
+ * https://developer.apple.com/documentation/security/keychain_services
  *
  */
 

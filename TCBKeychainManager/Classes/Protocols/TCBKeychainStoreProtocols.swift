@@ -52,3 +52,17 @@ public protocol TCBKeychainStoreUpdateProtocol {
     
     func updateItem() throws -> TCBKeychainStoreStatus
 }
+
+/**
+ * SecItemDelete(_:)
+ * https://developer.apple.com/documentation/security/1395547-secitemdelete
+ */
+public protocol TCBKeychainStoreDeleteProtocol {
+    associatedtype AttributeGroup
+    associatedtype AttributeSearchGroup
+    
+    mutating func addQuery(for attribute: AttributeGroup, value: Any) throws
+    mutating func addSearchQuery(for attribute: AttributeSearchGroup, value: Any) throws
+    
+    func deleteItem() throws -> TCBKeychainStoreStatus
+}
