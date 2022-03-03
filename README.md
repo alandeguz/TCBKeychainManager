@@ -20,8 +20,9 @@ it, simply add the following line to your Podfile:
 pod 'TCBKeychainManager'
 ```
 
-If pods path is not found. Use format: 
+If pods path is not found, You can either add: `source 'https://github.com/CocoaPods/Specs.git'` in your `Podfile`. Or use this format:
 ```ruby
+# This will always pull the latest. You'll not be able to set a specific version
 pod 'TCBKeychainManager', :git => 'https://github.com/TheCodingBug/TCBKeychainManager.git'
 ```
 
