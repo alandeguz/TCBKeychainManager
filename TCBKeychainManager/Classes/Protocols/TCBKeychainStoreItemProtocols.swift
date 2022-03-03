@@ -23,8 +23,16 @@ import Foundation
  *
  */
 
+public protocol TCBKeychainStoreClassItemAttributeProtocol {
+    var attributeKey: String { get }
+}
+
 public protocol TCBKeychainStoreItemAttributeProtocol {
     var attributeKey: String { get }
+}
+
+internal protocol TCBKeychainStoreItemValueAttributeProtocol: TCBKeychainStoreItemAttributeProtocol {
+    var attributeValue: Any { get }
 }
 
 public protocol TCBKeychainStoreItemQueryAttributeProtocol {

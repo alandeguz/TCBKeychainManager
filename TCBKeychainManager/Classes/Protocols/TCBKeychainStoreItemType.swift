@@ -11,7 +11,7 @@ import Foundation
  * Keys and Values:
  * https://developer.apple.com/documentation/security/keychain_services/keychain_items/item_attribute_keys_and_values
  */
-public enum TCBKeychainStoreItemType: TCBKeychainStoreItemAttributeProtocol {
+public enum TCBKeychainStoreItemType: TCBKeychainStoreClassItemAttributeProtocol {
     
     case genericPassword
     case internetPassword
@@ -32,6 +32,10 @@ public enum TCBKeychainStoreItemType: TCBKeychainStoreItemAttributeProtocol {
         case .identity:
             return String(kSecClassIdentity)
         }
+    }
+    
+    public var attributeValue: Any {
+        return "TODO: add value"
     }
     
     internal var secAttributeGroup: TCBKeychainStoreItemAttributeProtocol.Type {

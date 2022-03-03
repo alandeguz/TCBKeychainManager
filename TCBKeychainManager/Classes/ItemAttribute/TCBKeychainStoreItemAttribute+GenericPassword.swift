@@ -81,4 +81,8 @@ public enum TCBKeychainStoreItemAttributeGenericPassword: TCBKeychainStoreItemAt
             return String(kSecValueData)
         }
     }
+    
+    public var attributeValue: Any {
+        return "TODO: add value"
+    }
 }

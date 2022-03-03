@@ -83,4 +83,8 @@ public enum TCBKeychainStoreItemAttributeInternetPassword: TCBKeychainStoreItemA
             return String(kSecAttrSynchronizable)
         }
     }
+    
+    public var attributeValue: Any {
+        return "TODO: add value"
+    }
 }

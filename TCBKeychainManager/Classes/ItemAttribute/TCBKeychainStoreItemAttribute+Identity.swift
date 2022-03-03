@@ -13,4 +13,8 @@ public enum TCBKeychainStoreItemAttributeIdentity: TCBKeychainStoreItemAttribute
     public var attributeKey: String {
         return "TODO: add keys"
     }
+    
+    public var attributeValue: Any {
+        return "TODO: add value"
+    }
 }
