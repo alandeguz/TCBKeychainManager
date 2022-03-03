@@ -17,7 +17,7 @@ import Foundation
 public enum TCBKeychainStoreItemAttributeGenericPassword: TCBKeychainStoreItemAttributeProtocol {
 
 #if os(macOS)
-    case access // mac
+    case access // (macOS only)
 #endif
 
     case accessControl
