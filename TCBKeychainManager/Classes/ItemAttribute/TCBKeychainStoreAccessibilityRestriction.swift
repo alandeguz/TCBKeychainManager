@@ -23,8 +23,10 @@ public enum TCBKeychainStoreAccessibilityRestriction: TCBKeychainStoreItemValueA
     case afterFirstUnlockThisDeviceOnly
     /// The data in the keychain item cannot be accessed after a restart until the device has been unlocked once by the user.
     case afterFirstUnlock
-    
-    public var attributeKey: String {
+}
+
+public extension TCBKeychainStoreAccessibilityRestriction {
+    var attributeKey: String {
         switch self {
         case .whenPasscodeSetThisDeviceOnly:
             return String(kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly)
@@ -38,8 +40,10 @@ public enum TCBKeychainStoreAccessibilityRestriction: TCBKeychainStoreItemValueA
             return String(kSecAttrAccessibleAfterFirstUnlock)
         }
     }
-    
-    internal var attributeValue: Any {
+}
+
+internal extension TCBKeychainStoreAccessibilityRestriction {
+    var attributeValue: Any {
         switch self {
         case .whenPasscodeSetThisDeviceOnly:
             return kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly
