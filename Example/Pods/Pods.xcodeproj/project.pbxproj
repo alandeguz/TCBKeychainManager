@@ -19,6 +19,9 @@
 		083BC32327C272F100191CF4 /* TCBKeychainStoreItemProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083BC32227C272F100191CF4 /* TCBKeychainStoreItemProtocols.swift */; };
 		083BC32527C27D8200191CF4 /* TCBKeychainStoreItemAttribute+SearchQueryLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083BC32427C27D8200191CF4 /* TCBKeychainStoreItemAttribute+SearchQueryLimit.swift */; };
 		083BC32727C4AF6100191CF4 /* TCBKeychainStoreDeleteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083BC32627C4AF6100191CF4 /* TCBKeychainStoreDeleteManager.swift */; };
+		087D9AA0281646C20002D901 /* TCBKeychainStoreAccessibilityRestriction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D9A9D281646230002D901 /* TCBKeychainStoreAccessibilityRestriction.swift */; };
+		087D9AA328164E530002D901 /* TCBKeychainStoreSecureAttributeItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D9AA128164D2B0002D901 /* TCBKeychainStoreSecureAttributeItemProtocol.swift */; };
+		087D9AA5281656B70002D901 /* TCBKeychainStoreSecureAttributeAuthenticationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D9AA4281656B70002D901 /* TCBKeychainStoreSecureAttributeAuthenticationType.swift */; };
 		348DEEFF21DDAF64620826086F66D213 /* Pods-TCBKeychainManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F42B7B498DDBD3F1C612AE615741B8F /* Pods-TCBKeychainManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3653D9A4635A2448923D97A08D7E6DAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		37A22141A2B862EC0176DD46BC6DE9A5 /* TCBKeychainStoreItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3E2DD9D366EFEDEBFE67AD384AE680 /* TCBKeychainStoreItemType.swift */; };
@@ -65,6 +68,9 @@
 		083BC32227C272F100191CF4 /* TCBKeychainStoreItemProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCBKeychainStoreItemProtocols.swift; sourceTree = "<group>"; };
 		083BC32427C27D8200191CF4 /* TCBKeychainStoreItemAttribute+SearchQueryLimit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TCBKeychainStoreItemAttribute+SearchQueryLimit.swift"; sourceTree = "<group>"; };
 		083BC32627C4AF6100191CF4 /* TCBKeychainStoreDeleteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCBKeychainStoreDeleteManager.swift; sourceTree = "<group>"; };
+		087D9A9D281646230002D901 /* TCBKeychainStoreAccessibilityRestriction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCBKeychainStoreAccessibilityRestriction.swift; sourceTree = "<group>"; };
+		087D9AA128164D2B0002D901 /* TCBKeychainStoreSecureAttributeItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCBKeychainStoreSecureAttributeItemProtocol.swift; sourceTree = "<group>"; };
+		087D9AA4281656B70002D901 /* TCBKeychainStoreSecureAttributeAuthenticationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCBKeychainStoreSecureAttributeAuthenticationType.swift; sourceTree = "<group>"; };
 		0E0656DA3E4FCAE67B9E4CC8CBA5225A /* TCBKeychainManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TCBKeychainManager.modulemap; sourceTree = "<group>"; };
 		295B8777E5DC6EF11DFF68AC96BC975D /* TCBKeychainStoreItemAttribute+GenericPassword.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "TCBKeychainStoreItemAttribute+GenericPassword.swift"; sourceTree = "<group>"; };
 		29A2EE38CAB0DDAAE7998C65DFE871FA /* TCBKeychainManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TCBKeychainManager.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -133,6 +139,9 @@
 		083BC31327C2338700191CF4 /* ItemAttribute */ = {
 			isa = PBXGroup;
 			children = (
+				087D9A9D281646230002D901 /* TCBKeychainStoreAccessibilityRestriction.swift */,
+				087D9AA128164D2B0002D901 /* TCBKeychainStoreSecureAttributeItemProtocol.swift */,
+				087D9AA4281656B70002D901 /* TCBKeychainStoreSecureAttributeAuthenticationType.swift */,
 				295B8777E5DC6EF11DFF68AC96BC975D /* TCBKeychainStoreItemAttribute+GenericPassword.swift */,
 				083BC30B27C2332000191CF4 /* TCBKeychainStoreItemAttribute+InternetPassword.swift */,
 				083BC30D27C2334400191CF4 /* TCBKeychainStoreItemAttribute+Certificate.swift */,
@@ -389,6 +398,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					2FE1B52BE58F7586B09418A7D41FC0EE = {
+						LastSwiftMigration = 1330;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -464,10 +478,13 @@
 				88642DD764C0BAD3E3C7864948EC8A60 /* TCBKeychainStoreProtocols.swift in Sources */,
 				083BC31D27C24AE200191CF4 /* TCBKeychainStoreSearchManager.swift in Sources */,
 				083BC31027C2336600191CF4 /* TCBKeychainStoreItemAttribute+Cryptic.swift in Sources */,
+				087D9AA5281656B70002D901 /* TCBKeychainStoreSecureAttributeAuthenticationType.swift in Sources */,
+				087D9AA0281646C20002D901 /* TCBKeychainStoreAccessibilityRestriction.swift in Sources */,
 				083BC31227C2337B00191CF4 /* TCBKeychainStoreItemAttribute+Identity.swift in Sources */,
 				083BC32527C27D8200191CF4 /* TCBKeychainStoreItemAttribute+SearchQueryLimit.swift in Sources */,
 				083BC31927C2488900191CF4 /* TCBKeychainStoreUpdateManager.swift in Sources */,
 				083BC32327C272F100191CF4 /* TCBKeychainStoreItemProtocols.swift in Sources */,
+				087D9AA328164E530002D901 /* TCBKeychainStoreSecureAttributeItemProtocol.swift in Sources */,
 				083BC31B27C24A5D00191CF4 /* TCBKeychainStoreItemAttribute+SearchQuery.swift in Sources */,
 				083BC32127C2726500191CF4 /* TCBKeychainStoreItemReturnType.swift in Sources */,
 				083BC31527C23A7600191CF4 /* TCBKeychainStoreStatus.swift in Sources */,
@@ -531,6 +548,7 @@
 			baseConfigurationReference = 6D7890947EC13C7CA30733F6BF1F380A /* Pods-TCBKeychainManager_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -553,6 +571,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -758,6 +777,7 @@
 			baseConfigurationReference = ACE71678EE15C0EC35B373A6930FDB85 /* Pods-TCBKeychainManager_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -780,6 +800,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
