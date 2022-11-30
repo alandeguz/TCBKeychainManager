@@ -5,26 +5,12 @@
 [![License](https://img.shields.io/cocoapods/l/TCBKeychainManager.svg?style=flat)](https://cocoapods.org/pods/TCBKeychainManager)
 [![Platform](https://img.shields.io/cocoapods/p/TCBKeychainManager.svg?style=flat)](https://cocoapods.org/pods/TCBKeychainManager)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
 
 ## Installation
 
-TCBKeychainManager is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'TCBKeychainManager'
-```
-
-If pods path is not found, You can either add: `source 'https://github.com/CocoaPods/Specs.git'` in your `Podfile`. Or use this format:
-```ruby
-# This will always pull the latest. You'll not be able to set a specific version
-pod 'TCBKeychainManager', :git => 'https://github.com/TheCodingBug/TCBKeychainManager.git'
-```
+TCBKeychainManager is available through [Swift Package Manager](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app). 
 
 ## Sample Usage
 
@@ -113,6 +99,7 @@ do {
 ## Author
 
 Neil Francis Ramirez Hipona, nferocious76@gmail.com
+Modified by Alan DeGuzman
 
 ## License
 
